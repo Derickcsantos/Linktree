@@ -19,8 +19,8 @@ body{
 }
 
 img{
-    width: 180px;
-    height: 230px;
+    width: 120px;
+    height: 150px;
     border-radius: 30px;
     padding: 10px;
     margin: 15px 0 20px 0;
@@ -44,7 +44,8 @@ h1{
     margin: 5px;
     padding: 16px;
     border-radius: 15px;
-    width: 40%;
+    width: 90%;
+    max-width: 400px;
     font-weight: 600;
     color: #222222;
     box-shadow: 5px 5px 5px #868686;
@@ -57,7 +58,7 @@ h1{
 
 .whatsapp-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
     background-color: #25d366;
     color: #fff;
@@ -93,7 +94,7 @@ footer{
 
 p, a{
     text-align: center;
-    color: #fff;
+    color: #ccc;
     padding: 2px;
     margin: 2px;
 }
