@@ -53,13 +53,14 @@
     </script>
 </head>
 <body>
-
+    <!--Api do Vlibras-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
           <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
+    <!--Fim da API-->
 
     <a href="https://wa.me/5511986261007" target="_blank" class="whatsapp-button">
         <!-- <img src="/img/whatsapp.7f3687b9-847d-4f86-bb5c-c73259e2b38e" alt="WhatsApp"> -->
@@ -71,25 +72,35 @@
         <h1>Dérick Campos Santos</h1>
     </div>
     <div class="links">
-        <div class="rede">Linkedin</div>
-        <div class="rede">Instagram</div>
-        <div class="rede">Github</div>
-        <div class="rede">Email</div>
-        <div class="rede">Currículo</div>
+        <div class="rede" onclick="window.location.href='https://linkedin.com/in/derick-campos-santos'">Linkedin</div>
+        <div class="rede" onclick="window.location.href='https://instagram.com/derick_profissional'">Instagram</div>
+        <div class="rede" onclick="window.location.href='https://github.com/derickcsantos'">Github</div>
+        <div class="rede" onclick="window.location.href='mailto:derickcampossantos1@gmail.com?subject=Contato&body=Olá!%20Gostaria%20de%20entrar%20em%20contato.'">Email</div>
+        <div class="rede">Portfólio</div>
+        <div class="rede" onclick="baixarCurriculo()">Currículo</div>
     </div>
     
     <footer>
             <p class="copy">&copy; <span id="ano"></span> Linktree<br>Todos os direitos reservados.<br>Desenvolvido por <a class="marketing" href="https://github.com/Derickcsantos/Derickcsantos">Derick Campos Santos</a></p>
     </footer>
     <!--Fim do rodapé aqui-->
-
+    <script>
+        // Função para baixar o currículo
+        function baixarCurriculo() {
+            const link = document.createElement('a');
+            link.href = 'curriculo.pdf';  // Caminho para o arquivo
+            link.download = 'curriculo.pdf';  // Nome do arquivo ao ser baixado
+            link.click();  // Simula o clique no link para iniciar o download
+        }
+    </script>
     <script defer>
         const anoAtual = new Date().getFullYear();
         document.getElementById('ano').textContent =  anoAtual;
     </script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-         new window.VLibras.Widget('https://vlibras.gov.br/app');
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+
 </body>
 </html>
