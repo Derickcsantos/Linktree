@@ -138,3 +138,42 @@ p, a{
 #modal button:hover{
     transform: scale(1.1);
 }
+
+.temas{
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+}
+
+#blue, 
+#orange,
+#green,
+#black,
+#gray{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+#blue{
+    background-image: linear-gradient(to right, rgb(0, 49, 211), rgb(3, 210, 247));;
+}
+
+#orange{
+    background-image: linear-gradient(to right, red, orange);
+}
+
+#green{
+    background-image: linear-gradient(to right, green, lightgreen);
+}
+
+#black{
+    background-color: #353535;
+}
+
+#gray{
+    background-image: linear-gradient(to right, gray, white);
+}

@@ -62,10 +62,13 @@
     </div>
     <!--Fim da API-->
 
-    <button id="orange" onclick="changeToOrange()">laranja</button>
-    <button id="blue" onclick="changeToBlue()">Azul</button>
-    <button id="green" onclick="changeToGreen()">Verde</button>
-    <button id="black" onclick="changeToBlack()">Preto</button>
+    <div class="temas">
+        <button id="orange" onclick="changeToOrange()"></button>
+        <button id="blue" onclick="changeToBlue()"></button>
+        <button id="green" onclick="changeToGreen()"></button>
+        <button id="black" onclick="changeToBlack()"></button>
+        <button id="gray" onclick="changeToGray()"></button>
+    </div>
 
     <a href="https://wa.me/5511986261007" target="_blank" class="whatsapp-button">
         <!-- <img src="/img/whatsapp.7f3687b9-847d-4f86-bb5c-c73259e2b38e" alt="WhatsApp"> -->
@@ -74,7 +77,7 @@
 
     <div class="apresentacao">
         <img src="./img/Basica.jpg" alt="Foto de perfil">
-        <h1>Dérick Campos Santos</h1>
+        <h1 id="nome">Dérick Campos Santos</h1>
     </div>
     <div class="links">
         <div class="rede" onclick="window.location.href='https://linkedin.com/in/derick-campos-santos'">Linkedin</div>
@@ -91,7 +94,7 @@
     </div>
     
     <footer>
-            <p class="copy">&copy; <span id="ano"></span> Linktree<br>Todos os direitos reservados.<br>Desenvolvido por<a class="marketing" href="https://linkedin.com/in/derick-campos-santos">Derick Campos Santos</a></p>
+            <p id="copy" class="copy">&copy; <span id="ano"></span> Linktree<br>Todos os direitos reservados.<br>Desenvolvido por<a id="marketing" class="marketing" href="https://linkedin.com/in/derick-campos-santos">Derick Campos Santos</a></p>
     </footer>
     
     <script src="script.js"></script>

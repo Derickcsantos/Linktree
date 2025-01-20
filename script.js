@@ -47,5 +47,19 @@ function changeToBlack(){
     document.body.style.background = "#333";
 }
 
+function changeToGray(){
+    const nome = document.getElementById('nome');
+    const copy = document.getElementById('copy');
+    const marketing = document.getElementById('marketing');
+    const rede = document.getElementsByClassName('rede');
+    for (let i=0; i < rede.length; i++){
+        rede[i].style.background = "#fff";
+    }
+    nome.style.color = "#333";
+    copy.style.color = "#333";
+    marketing.style.color = "purple";
+    document.body.style.backgroundImage = 'linear-gradient(to right, gray, white)';
+}
+
 const anoAtual = new Date().getFullYear();
         document.getElementById('ano').textContent =  anoAtual;
