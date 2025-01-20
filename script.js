@@ -1,4 +1,4 @@
-document.getElementById('showTemas').addEventListener("click", function() {
+document.getElementById('mostrarTemas').addEventListener("click", function() {
     document.querySelector(".temas").classList.toggle("open");
 });
 
@@ -19,7 +19,7 @@ function fecharModal(){
     modal.style.display = 'none'
 }
 
-function changeToOrange(){
+function mudarParaLaranja(){
     const nome = document.getElementById('nome');
     const copy = document.getElementById('copy');
     const marketing = document.getElementById('marketing');
@@ -28,12 +28,12 @@ function changeToOrange(){
         rede[i].style.background = "#fff";
     }
     nome.style.color = "#fff";
-    copy.style.color = "#ccc";
+    copy.style.color = "#fff";
     marketing.style.color = "#fff";
     document.body.style.backgroundImage = 'linear-gradient(to right, red, rgb(255, 123, 0))';
 }
 
-function changeToBlue(){
+function mudarParaAzul(){
     const nome = document.getElementById('nome');
     const copy = document.getElementById('copy');
     const marketing = document.getElementById('marketing');
@@ -42,12 +42,12 @@ function changeToBlue(){
         rede[i].style.background = "#fff";
     }
     nome.style.color = "#fff";
-    copy.style.color = "#ccc";
+    copy.style.color = "#fff";
     marketing.style.color = "#fff";
     document.body.style.backgroundImage = 'linear-gradient(to right, rgb(0, 49, 211), rgb(3, 210, 247))';
 }
 
-function changeToGreen(){
+function mudarParaVerde(){
     const nome = document.getElementById('nome');
     const copy = document.getElementById('copy');
     const marketing = document.getElementById('marketing');
@@ -61,7 +61,7 @@ function changeToGreen(){
     document.body.style.backgroundImage = 'linear-gradient(to right, green, lightgreen)';
 }
 
-function changeToBlack(){
+function mudarParaPreto(){
     const nome = document.getElementById('nome');
     const copy = document.getElementById('copy');
     const marketing = document.getElementById('marketing');
@@ -75,7 +75,7 @@ function changeToBlack(){
     document.body.style.background = "#333";
 }
 
-function changeToGray(){
+function mudarParaCinza(){
     const nome = document.getElementById('nome');
     const copy = document.getElementById('copy');
     const marketing = document.getElementById('marketing');
