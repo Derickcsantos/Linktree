@@ -176,7 +176,29 @@ p, a{
     color: #666666;
 }
 
+.linkedin:hover i{
+    color: rgb(0, 153, 255);
+}
 
+.instagram:hover i{
+    color: rgb(212, 24, 187);
+}
+
+.github:hover i{
+    color: rgb(25, 29, 32);
+}
+
+.email:hover i{
+    color: rgb(240, 17, 17);
+}
+
+.portfolio:hover i{
+    color: rgb(109, 60, 14);
+}
+
+.curriculo:hover i{
+    color: rgba(6, 148, 37, 0.945);
+}
 
 #azul, 
 #laranja,
