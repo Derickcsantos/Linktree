@@ -139,11 +139,43 @@ p, a{
     transform: scale(1.1);
 }
 
-.temas{
-    display: flex;
-    justify-content: end;
-    margin: 5px;
+#showTemas{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    color: #000;
 }
+
+.temas{
+    position: fixed;
+    top: 10px; /* Alinha as bolinhas ao topo da página */
+    right: -200px; /* Começa fora da tela, à direita */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: right 0.3s ease;
+    z-index: 99;
+}
+
+.temas.open {
+    right: 60px; /* Faz as bolinhas aparecerem com 5px de distância da borda direita */
+}
+
+.share{
+    font-size: 18px;
+    margin: 0px 5px 0px 0px;
+    color: #666666;
+}
+
+
 
 #blue, 
 #orange,
@@ -156,6 +188,7 @@ p, a{
     border: 1px solid #ccc;
     padding: 5px;
     margin: 5px;
+    cursor: pointer;
 }
 
 #blue{
@@ -163,7 +196,7 @@ p, a{
 }
 
 #orange{
-    background-image: linear-gradient(to right, red, orange);
+    background-image: linear-gradient(to right, red, rgb(255, 123, 0));
 }
 
 #green{
