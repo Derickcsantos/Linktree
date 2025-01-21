@@ -81,13 +81,44 @@
     </div>
     
     <div class="links">
-        <div class="rede linkedin" onclick="window.location.href='https://linkedin.com/in/derick-campos-santos'"><i class="fab fa-linkedin share"></i>Linkedin</div>
-        <div class="rede instagram" onclick="window.location.href='https://instagram.com/derick_profissional'"><i class="fab fa-instagram share"></i>Instagram</div>
-        <div class="rede github" onclick="window.location.href='https://github.com/derickcsantos'"><i class="fab fa-github share"></i>Github</div>
-        <div class="rede email" onclick="window.location.href='mailto:derickcampossantos1@gmail.com?subject=Contato&body=Olá!%20Gostaria%20de%20entrar%20em%20contato.'"><i class="far fa-envelope share"></i>Email</div>
-        <div class="rede portfolio" onclick="abrirModal()"><i class="fa-solid fa-user-tie share"></i>Portfólio</div>
-        <div class="rede curriculo" onclick="baixarCurriculo()"><i class="far fa-address-card share"></i>Currículo</div>
+        
+        <div class="rede linkedin" onclick="window.location.href='https://linkedin.com/in/derick-campos-santos'">
+            <i class="fab fa-linkedin share"></i>
+                Linkedin
+            <i onclick="copiarLink()" class="fas fa-copy more"></i>
+        </div>
+
+        <div class="rede instagram" onclick="window.location.href='https://instagram.com/derick_profissional'">
+            <i class="fab fa-instagram share"></i>
+                Instagram
+            <i onclick="copiarLink()" class="fas fa-copy more"></i>
+        </div>
+
+        <div class="rede github" onclick="window.location.href='https://github.com/derickcsantos'">
+            <i class="fab fa-github share"></i>
+                Github
+            <i onclick="copiarLink()" class="fas fa-copy more"></i>
+        </div>
+
+        <div class="rede email" onclick="window.location.href='mailto:derickcampossantos1@gmail.com?subject=Contato&body=Olá!%20Gostaria%20de%20entrar%20em%20contato.'">
+            <i class="far fa-envelope share"></i>
+                Email
+            <i onclick="copiarLink()" class="fas fa-copy more"></i>
+        </div>
+            
+        <div class="rede portfolio" onclick="abrirModal()">
+            <i class="fa-solid fa-user-tie share"></i>
+                Portfólio
+            <i onclick="copiarLink()" class="fas fa-copy more"></i>
+        </div>
+
+        <div class="rede curriculo" onclick="baixarCurriculo()">
+            <i class="far fa-address-card share"></i>
+                Currículo
+            <i onclick="copiarLink()" class="fas fa-copy more"></i>
+        </div>
     </div>
+
 
     <div id="modal">
         <p>No momento o portfólio não está disponível, Em breve atualizações.</p>

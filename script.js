@@ -1,5 +1,15 @@
-document.getElementById('mostrarTemas').addEventListener("click", function() {
+document.getElementById('mostrarTemas').addEventListener("click", function(event) {
+    event.stopPropagation(); // Impede o clique de propagar para o document
     document.querySelector(".temas").classList.toggle("open");
+});
+
+document.addEventListener("click", function() {
+    document.querySelector(".temas").classList.remove("open");
+});
+
+// Impede que o clique no menu de temas feche a gaveta
+document.querySelector(".temas").addEventListener("click", function(event) {
+    event.stopPropagation();
 });
 
 function baixarCurriculo() {
@@ -7,6 +17,15 @@ function baixarCurriculo() {
     link.href = 'curriculo.pdf'; 
     link.download = 'curriculo.pdf';  
     link.click();  
+}
+
+function copiarLink() {
+    const link = "https://derickcs-linktree.vercel.app";
+    navigator.clipboard.writeText(link).then(function() {
+        console.log = "Link copiado!";
+    }).catch(function(err) {
+        console.error("Erro ao copiar o link: ", err);
+    });
 }
 
 function abrirModal(){
