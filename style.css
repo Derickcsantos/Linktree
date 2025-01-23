@@ -42,7 +42,7 @@ h1{
 .rede{
     background-color: #fff;
     margin: 5px;
-    padding: 16px;
+    padding: 13px;
     border-radius: 15px;
     width: 80%;
     max-width: 400px;
@@ -81,7 +81,7 @@ h1{
     font-size: 40px;
 }
 
-.fa-copy{
+.fa-play-circle{
     margin-left: auto;
     color: #666666;
 }
