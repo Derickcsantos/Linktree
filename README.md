@@ -16,7 +16,7 @@ Este Linktree foi desenvolvido para centralizar os links mais importantes e faci
 
 ## Links Disponíveis 🔗
 
-- **Link do projeto**: [Ir para o projeto](https://linktree-dcs.vercel.app)
+- **Link do projeto**: [Ir para o projeto](https://derickcs-linktree.vercel.app)
 - **Instagram** : [Instagram](https://www.instagram.com/derick_profissional)
 - **LinkedIn**: [Linkdedin](https://www.linkedin.com/in/derick-campos-santos/)
 - **GitHub**: [GitHub](https://github.com/Derickcsantos)
