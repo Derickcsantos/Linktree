@@ -1,3 +1,9 @@
+const nome = document.getElementById('nome');
+const copy = document.getElementById('copy');
+const pincel = document.getElementById('mostrarTemas');
+const marketing = document.getElementById('marketing');
+const rede = document.getElementsByClassName('rede');
+
 document.getElementById('mostrarTemas').addEventListener("click", function(event) {
     event.stopPropagation(); // Impede o clique de propagar para o document
     document.querySelector(".temas").classList.toggle("open");
@@ -39,13 +45,10 @@ function fecharModal(){
 }
 
 function mudarParaLaranja(){
-    const nome = document.getElementById('nome');
-    const copy = document.getElementById('copy');
-    const marketing = document.getElementById('marketing');
-    const rede = document.getElementsByClassName('rede');
     for (let i=0; i < rede.length; i++){
         rede[i].style.background = "#fff";
     }
+    pincel.style.color = "#fff";
     nome.style.color = "#fff";
     copy.style.color = "#fff";
     marketing.style.color = "#fff";
@@ -53,13 +56,10 @@ function mudarParaLaranja(){
 }
 
 function mudarParaAzul(){
-    const nome = document.getElementById('nome');
-    const copy = document.getElementById('copy');
-    const marketing = document.getElementById('marketing');
-    const rede = document.getElementsByClassName('rede');
     for (let i=0; i < rede.length; i++){
         rede[i].style.background = "#fff";
     }
+    pincel.style.color = "#fff";
     nome.style.color = "#fff";
     copy.style.color = "#fff";
     marketing.style.color = "#fff";
@@ -67,13 +67,10 @@ function mudarParaAzul(){
 }
 
 function mudarParaVerde(){
-    const nome = document.getElementById('nome');
-    const copy = document.getElementById('copy');
-    const marketing = document.getElementById('marketing');
-    const rede = document.getElementsByClassName('rede');
     for (let i=0; i < rede.length; i++){
         rede[i].style.background = "#fff";
     }
+    pincel.style.color = "#fff";
     nome.style.color = "#fff";
     copy.style.color = "#fff";
     marketing.style.color = "#000";
@@ -81,13 +78,10 @@ function mudarParaVerde(){
 }
 
 function mudarParaPreto(){
-    const nome = document.getElementById('nome');
-    const copy = document.getElementById('copy');
-    const marketing = document.getElementById('marketing');
-    const rede = document.getElementsByClassName('rede');
     for (let i=0; i < rede.length; i++){
         rede[i].style.background = "#ccc";
     }
+    pincel.style.color = "#fff";
     nome.style.color = "#fff";
     copy.style.color = "#ccc";
     marketing.style.color = "#fff";
@@ -95,13 +89,10 @@ function mudarParaPreto(){
 }
 
 function mudarParaCinza(){
-    const nome = document.getElementById('nome');
-    const copy = document.getElementById('copy');
-    const marketing = document.getElementById('marketing');
-    const rede = document.getElementsByClassName('rede');
     for (let i=0; i < rede.length; i++){
         rede[i].style.background = "#fff";
     }
+    pincel.style.color = "#000";
     nome.style.color = "#333";
     copy.style.color = "#333";
     marketing.style.color = "purple";
