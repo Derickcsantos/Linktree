@@ -20,7 +20,7 @@ document.querySelector(".temas").addEventListener("click", function(event) {
 
 function baixarCurriculo() {
     const link = document.createElement('a');
-    link.href = 'curriculo.pdf'; 
+    link.href = 'Currículo - Dérick Campos Santos.pdf'; 
     link.download = 'curriculo.pdf';  
     link.click();  
 }
