@@ -123,43 +123,6 @@
             <p id="copy" class="copy">&copy; <span id="ano"></span> Linktree<br>Todos os direitos reservados.<br>Desenvolvido por<a id="marketing" class="marketing" href="https://linkedin.com/in/derick-campos-santos">Derick Campos Santos</a></p>
     </footer>
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-                <div class="vw-plugin-top-wrapper">
-            </div>
-        </div>
-    </div>
-    
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-    // Inicializa o widget normalmente
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-
-    // Aguarda o carregamento da página e reinicializa o widget após 1 segundo
-    window.addEventListener("load", () => {
-        setTimeout(() => {
-            // Remove o widget atual
-            const antigo = document.querySelector('[vw]');
-            if (antigo) antigo.remove();
-
-            // Cria novamente o container
-            const novoContainer = document.createElement('div');
-            novoContainer.setAttribute('vw', '');
-            novoContainer.classList.add('enabled');
-            novoContainer.innerHTML = `
-                <div vw-access-button class="active"></div>
-                <div vw-plugin-wrapper>
-                    <div class="vw-plugin-top-wrapper"></div>
-                </div>
-            `;
-            document.getElementById("vlibras-container").appendChild(novoContainer);
-
-            // Reinicia o widget
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-        }, 1000); // 1 segundo de atraso para garantir que tudo foi carregado
-    });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
